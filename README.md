@@ -24,8 +24,7 @@
 
 Try out the website : [CodingSpace](https://grocery-management-app.vercel.app/)
 
-https://user-images.githubusercontent.com/57035408/146677343-b17c41c4-ce8c-4501-aa1e-9115a2e6ddf2.mp4
-
+https://user-images.githubusercontent.com/57035408/146677432-385bd3e0-7d52-4868-9c8f-fb1e59993202.mp4
 
 ## 👨‍🔧 Tech Stack
 

@@ -22,7 +22,7 @@
 <img src="https://img.shields.io/website?url=https://grocery-management-app.vercel.app/&logo=github&style=flat-square" />
 </a>
 
-Try out the website : [CodingSpace](https://grocery-management-app.vercel.app/)
+Try out the website : [Grocery Management App](https://grocery-management-app.vercel.app/)
 
 https://user-images.githubusercontent.com/57035408/146677432-385bd3e0-7d52-4868-9c8f-fb1e59993202.mp4
 

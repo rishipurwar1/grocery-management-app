@@ -23,7 +23,7 @@ const CreateOrder = () => {
       order_details: [],
     },
   });
-  const { control, handleSubmit, setValue, reset } = formMethods;
+  const { control, handleSubmit, setValue } = formMethods;
   const { order_details } = useWatch({
     control,
   });

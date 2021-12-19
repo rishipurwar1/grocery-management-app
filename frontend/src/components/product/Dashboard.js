@@ -30,7 +30,6 @@ const Dashboard = () => {
       },
       {
         Header: "Action",
-        // id: "delete",
         accessor: "product_id",
         Cell: (row) => (
           <Button
@@ -46,7 +45,7 @@ const Dashboard = () => {
         ),
       },
     ],
-    [data]
+    [dispatch]
   );
 
   return (

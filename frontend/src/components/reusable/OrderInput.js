@@ -3,7 +3,7 @@ import { classNames } from "../../modules/misc";
 import { useFormContext } from "react-hook-form";
 
 const OrderInput = ({ inputName, type, className, ...rest }) => {
-  const { register, formState: errors } = useFormContext();
+  const { register } = useFormContext();
   return (
     <input
       type={type}

@@ -25,11 +25,11 @@ const Item = ({ fieldId, remove, index }) => {
   }, [dispatch]);
   const products = useSelector((state) => state.products);
   return (
-    <div className="grid grid-cols-5 bg-white p-2 items-center p-4 bg-white block my-3">
+    <div className="grid grid-rows-4 lg:grid-rows-1 grid-cols-1 lg:grid-cols-5 gap-y-4 gap-x-1 bg-white items-center p-4 bg-white block my-3">
       <div>
         {products.length > 0 ? (
           <select
-            className="w-full p-3 rounded-md border focus:outline-none border border-gray-200 transition text-black font-bold text-xs"
+            className="w-full p-3 rounded-md border focus:outline-none border border-gray-200 transition placeholder-blueGray-300 bg-gray-100 text-blueGray-600 font-bold text-xs"
             name={`${fieldId}.product_id`}
             id={`${fieldId}.product_id`}
             defaultValue={products[0].product_name}
@@ -46,22 +46,31 @@ const Item = ({ fieldId, remove, index }) => {
         ) : null}
       </div>
       <div>
-        <OrderInput inputName={`${fieldId}.price`} type="number" />
+        <OrderInput
+          inputName={`${fieldId}.price`}
+          type="number"
+          className="w-full lg:w-max"
+        />
       </div>
       <div>
-        <OrderInput inputName={`${fieldId}.quantity`} type="number" />
+        <OrderInput
+          inputName={`${fieldId}.quantity`}
+          type="number"
+          className="w-full lg:w-max"
+        />
       </div>
-      <div>
+      <div className="flex items-center">
         <OrderInput
           inputName={`${fieldId}.total_price`}
           type="text"
           readOnly={true}
+          className="w-full lg:w-max"
         />
         <span className="pl-1">Rs</span>
       </div>
       <div>
         <Button
-          className="bg-red-500"
+          className="bg-red-500 w-full lg:w-max"
           aria-label="delete button"
           onClick={(e) => {
             e.preventDefault();

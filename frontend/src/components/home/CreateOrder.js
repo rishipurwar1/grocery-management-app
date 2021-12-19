@@ -53,7 +53,7 @@ const CreateOrder = () => {
       <FormProvider {...formMethods}>
         <form
           onSubmit={handleSubmit((data) => onSubmit(data))}
-          className="h-screen"
+          className="h-screen mx-5"
         >
           <div className="border-b border-gray-300 p-4 flex justify-between items-center bg-white">
             <h1 className="text-xl text-black opacity-70 font-normal  text-left">
@@ -107,8 +107,8 @@ const CreateOrder = () => {
               );
             })}
           </div>
-          <div className="flex flex-col justify-end items-end bg-white p-4">
-            <div className="flex items-center">
+          <div className="flex justify-between bg-white p-4">
+            <div>
               <span className="font-bold text-sm text-gray-500">Total</span>
               <span className="mx-2">
                 <OrderInput
@@ -117,9 +117,10 @@ const CreateOrder = () => {
                   readOnly={true}
                 />
               </span>
-              <span className="pr-2 font-bold text-sm">Rs</span>
+              <span className="font-bold text-sm">Rs</span>
             </div>
-            <Button type="submit" className="bg-blue-700">
+
+            <Button type="submit" className="bg-blue-700 mt-3">
               Save
             </Button>
           </div>
